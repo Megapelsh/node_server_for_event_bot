@@ -3,9 +3,9 @@ const url = require('url');
 http.createServer((request, response) => {
     console.log('server work');
     let urlRequest = url.parse(request.url, true);
-    let event = urlRequest.query.event;
+    let event = urlRequest.query.event ? urlRequest.query.event : '***';
     let access = 'Заборонено!'
-    if (urlRequest.query.access != 'denied') {
+    if (urlRequest.query.access == 'granted') {
         access = 'Дозволено';
     }
     
