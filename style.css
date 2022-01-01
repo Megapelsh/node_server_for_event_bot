@@ -1,0 +1,20 @@
+body {
+    background: #202020;
+    color: #cfcc00;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+.inputs {
+    margin-top: auto;
+}
